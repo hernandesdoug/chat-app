@@ -44,6 +44,7 @@ main {
     justify-content: center;
     align-items: center;
     background-color: aliceblue;
+    margin-left: 25px;
 }
 
 #lbl-input {
@@ -75,6 +76,8 @@ button {
     border: 1px solid #ccc;
     height: 450px;
     background: #f9f9f9;
+    overflow-y: scroll;
+    margin-left: 5px;
 }
 
 footer {
