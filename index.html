@@ -8,6 +8,24 @@
     <title>Chat App</title>
 </head>
 <body>
+    <header>
+        <h1>Real-Time Chat App</h1>
+        <p>Chat with other users instantly!</p>
+    </header>
+    <main>
+        <div id="lbl-input">
+            <label for="input-msg">Type your message below:
+                <input type="text" id="input-msg" placeholder="Enter with your message...">
+            </label>
+        </div>
+        <div id="btn-send">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+        <div id="chat-message"></div>
+    </main>
+    <footer>
+        <p><a href="https://github.com/hernandesdoug">Douglas Hernandes</a></p>
+    </footer>
     <script src="js/app.js"></script>
 </body>
 </html>
