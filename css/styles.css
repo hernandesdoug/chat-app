@@ -64,17 +64,9 @@ main {
     box-shadow: 0 0 0 2px #4e73df55;
 }
 
-#input-msg {
-    max-width: 70%;
-    padding: 10px 14px;
-    border-radius: 16px;
-    font-size: 0.9rem;
-    line-height: 1.4;
-    word-wrap: break-word;
-}
-
 #btn-send {
     margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: flex-end;
     width: 100%;
