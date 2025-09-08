@@ -23,8 +23,6 @@ wss.on('connection', (ws) => {
   ws.on('close', () => {
     clients.delete(ws);
     console.log('client disconnected');
-    if (ws.username) {
-      const leaveMsg = { type: "leave", username: ws.username };
       wss.clients.forEach((client) => {
         if (client.readyState === WebSocket.OPEN) {
           client.send(JSON.stringify(leaveMsg));
