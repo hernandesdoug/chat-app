@@ -28,7 +28,6 @@ wss.on('connection', (ws) => {
           client.send(JSON.stringify(leaveMsg));
         }
       });
-    }
   });
 });
 
