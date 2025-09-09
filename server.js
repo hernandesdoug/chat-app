@@ -10,9 +10,9 @@ wss.on('connection', (ws) => {
   ws.on("message", (data) => {
     const msg = JSON.parse(data);
     console.log(data);
-    if (msg.type === "join") {  
-      ws.username = msg.username; 
-    }
+    // if (msg.type === "join") {  
+    //   ws.username = msg.username; 
+    // }
     wss.clients.forEach(client => {
       if (client !== ws && client.readyState === WebSocket.OPEN) {
         client.send(JSON.stringify(msg));
